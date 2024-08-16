@@ -10,8 +10,8 @@ editor_options:
 
 Click on these links to test if they are working
 
-[Figure-code](../analysis/Figure.Rmd) | [Figure](../docs/figure/Figure.Rmd/draw-image-1.png)
+[Figure-code](../docs/Figure.html) | [Figure](../docs/figure/Figure.Rmd/draw-image-1.png)
 
-[Table-code](../analysis/Table.Rmd) | [Table](../docs/Table.csv)
+[Table-code](../docs/Table.html) | [Table](../docs/Table.csv)
 
-[HTML-code](../analysis/Webpage.Rmd) | [HTML](../docs/Webpage.html)
+[HTML-code](../docs/Webpage.html) | [HTML](../docs/Webpage.html)
