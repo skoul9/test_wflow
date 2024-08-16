@@ -289,7 +289,7 @@ $(document).ready(function () {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -300,8 +300,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -314,9 +314,9 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>test_wflow/</code> <span
@@ -339,33 +339,36 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
-</a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
+changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate"
+<div id="strongRMarkdownfilestronguncommittedchanges"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git
-repository, you know the exact version of the code that produced these
-results.</p>
+<p>The R Markdown file has staged changes. To know which version of the
+R Markdown file created these results, you’ll want to first commit it to
+the Git repo. If you’re still working on the analysis, you can ignore
+this warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and build the
+HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomskoul9testwflowtree7ccfeefc4c464ba70806af3efd2d796cc162c0c8targetblank7ccfeefa">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomskoul9testwflowtree78fb846449b8c304e27ee1153baf622edf7edc66targetblank78fb846a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/skoul9/test_wflow/tree/7ccfeefc4c464ba70806af3efd2d796cc162c0c8" target="_blank">7ccfeef</a>
+<a href="https://github.com/skoul9/test_wflow/tree/78fb846449b8c304e27ee1153baf622edf7edc66" target="_blank">78fb846</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomskoul9testwflowtree7ccfeefc4c464ba70806af3efd2d796cc162c0c8targetblank7ccfeefa"
+id="strongRepositoryversionstrongahrefhttpsgithubcomskoul9testwflowtree78fb846449b8c304e27ee1153baf622edf7edc66targetblank78fb846a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -375,7 +378,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/skoul9/test_wflow/tree/7ccfeefc4c464ba70806af3efd2d796cc162c0c8" target="_blank">7ccfeef</a>.
+<a href="https://github.com/skoul9/test_wflow/tree/78fb846449b8c304e27ee1153baf622edf7edc66" target="_blank">78fb846</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -389,7 +392,9 @@ depends on. Below is the status of the Git repository when the results
 were generated:
 </p>
 <pre><code>
-working directory clean
+Staged changes:
+    Modified:   analysis/index.Rmd
+
 </code></pre>
 <p>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not
@@ -433,6 +438,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/skoul9/test_wflow/78fb846449b8c304e27ee1153baf622edf7edc66/docs/index.html" target="_blank">78fb846</a>
+</td>
+<td>
+Shashikant Koul
+</td>
+<td>
+2024-08-16
+</td>
+<td>
+Rebuild and update webpage links
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -509,12 +531,11 @@ Start workflowr project.
 </div>
 </div>
 <p>Click on these links to test if they are working</p>
-<p><a href="../docs/Figure.html">Figure-code</a> | <a
-href="../docs/figure/Figure.Rmd/draw-image-1.png">Figure</a></p>
-<p><a href="../docs/Table.html">Table-code</a> | <a
-href="../docs/Table.csv">Table</a></p>
-<p><a href="../docs/Webpage.html">HTML-code</a> | <a
-href="../docs/Webpage.html">HTML</a></p>
+<p><a href="Figure.html">Figure-code</a> | <a
+href="figure/Figure.Rmd/draw-image-1.png">Figure</a></p>
+<p><a href="Table.html">Table-code</a> | <a
+href="Table.csv">Table</a></p>
+<p><a href="Webpage.html">HTML-code</a></p>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using

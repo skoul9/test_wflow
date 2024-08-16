@@ -10,8 +10,8 @@ editor_options:
 
 Click on these links to test if they are working
 
-[Figure-code](../docs/Figure.html) | [Figure](../docs/figure/Figure.Rmd/draw-image-1.png)
+[Figure-code](Figure.html) | [Figure](figure/Figure.Rmd/draw-image-1.png)
 
-[Table-code](../docs/Table.html) | [Table](../docs/Table.csv)
+[Table-code](Table.html) | [Table](Table.csv)
 
-[HTML-code](../docs/Webpage.html) | [HTML](../docs/Webpage.html)
+[HTML-code](Webpage.html)
