@@ -1,0 +1,14 @@
+---
+title: "Figure1"
+---
+
+
+```{r packages, echo = FALSE, eval = TRUE}
+library(ggplot2)
+```
+
+
+```{r draw-image, echo = FALSE, eval = TRUE, fig.width = 7, fig.height = 4}
+df <- data.frame(x = seq(1, 100), y = runif(100))
+ggplot(df, aes(x, y)) + geom_point() + theme_classic()
+```

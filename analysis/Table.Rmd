@@ -1,0 +1,14 @@
+---
+title: "Table1"
+---
+
+
+```{r packages}
+library(here)
+```
+
+
+```{r write.table}
+df <- data.frame(x = seq(1,100), y = runif(100))
+write.csv(df, here("docs", "Table.csv"))
+```

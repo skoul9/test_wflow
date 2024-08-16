@@ -8,4 +8,10 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Click on these links to test if they are working
+
+[Figure-code](../analysis/Figure.Rmd) | [Figure](../docs/figure/Figure.Rmd/draw-image-1.png)
+
+[Table-code](../analysis/Table.Rmd) | [Table](../docs/Table.csv)
+
+[HTML-code](../analysis/Webpage.Rmd) | [HTML](../docs/Webpage.html)
